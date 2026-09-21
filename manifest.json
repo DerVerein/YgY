@@ -1,0 +1,20 @@
+{
+  "name": "YgY – Jeder Tag lohnt sich",
+  "short_name": "YgY",
+  "description": "Spielen, sparen, Cashback, Gratis testen und Deals entdecken.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#10152c",
+  "theme_color": "#30106b",
+  "lang": "de-DE",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "ygy-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
