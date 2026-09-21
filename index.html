@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10152c">
+<title>YgY – Jeder Tag lohnt sich.</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#f5f7ff;
+  color:#18203a;
+  padding-bottom:90px;
+}
+
+header{
+  background:linear-gradient(135deg,#0b1530,#30106b);
+  color:white;
+  padding:28px 18px 32px;
+  border-radius:0 0 30px 30px;
+}
+
+.logo{
+  font-size:48px;
+  font-weight:900;
+  letter-spacing:-4px;
+}
+
+.logo span{
+  background:linear-gradient(90deg,#34f5b4,#39c8ff,#d744ff);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+header h1{
+  font-size:25px;
+  margin-top:8px;
+}
+
+header p{
+  margin-top:7px;
+  color:#dfe5ff;
+}
+
+.balance{
+  margin-top:22px;
+  background:rgba(255,255,255,.12);
+  padding:16px;
+  border-radius:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.balance strong{
+  font-size:25px;
+}
+
+main{
+  padding:20px 16px;
+  max-width:650px;
+  margin:auto;
+}
+
+h2{
+  font-size:20px;
+  margin:8px 2px 15px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+
+.card{
+  min-height:155px;
+  border-radius:24px;
+  padding:18px;
+  color:white;
+  box-shadow:0 8px 22px rgba(30,40,90,.13);
+  cursor:pointer;
+}
+
+.card .icon{
+  font-size:38px;
+  margin-bottom:12px;
+}
+
+.card h3{
+  font-size:18px;
+  margin-bottom:5px;
+}
+
+.card p{
+  font-size:13px;
+  line-height:1.35;
+  opacity:.95;
+}
+
+.games{
+  background:linear-gradient(135deg,#00c98b,#00aeea);
+}
+
+.free{
+  background:linear-gradient(135deg,#c33cff,#ff4fb0);
+}
+
+.cashback{
+  background:linear-gradient(135deg,#ff9c1a,#ffcf35);
+  color:#302000;
+}
+
+.deals{
+  background:linear-gradient(135deg,#3185ff,#6c4cff);
+}
+
+.today{
+  margin-top:24px;
+  background:white;
+  border-radius:24px;
+  padding:19px;
+  box-shadow:0 7px 22px rgba(30,40,90,.09);
+}
+
+.today-title{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.hot{
+  background:#ff315e;
+  color:white;
+  padding:5px 10px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:bold;
+}
+
+.offer{
+  margin-top:15px;
+  padding:14px;
+  border-radius:17px;
+  background:#f5f7ff;
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.offer-icon{
+  font-size:28px;
+}
+
+.offer strong{
+  display:block;
+}
+
+.offer small{
+  color:#66708b;
+}
+
+.bottom{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  height:72px;
+  background:white;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  box-shadow:0 -5px 20px rgba(20,30,60,.10);
+  z-index:10;
+}
+
+.nav{
+  text-align:center;
+  font-size:11px;
+  color:#68708a;
+}
+
+.nav div{
+  font-size:24px;
+  margin-bottom:3px;
+}
+
+.active{
+  color:#6a3cff;
+  font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo"><span>YgY</span></div>
+
+  <h1>Jeder Tag lohnt sich.</h1>
+  <p>Spare Geld, entdecke Vorteile und verdiene nebenbei.</p>
+
+  <div class="balance">
+    <div>
+      <small>Mein Guthaben</small><br>
+      <strong>0,00 €</strong>
+    </div>
+    <div style="font-size:30px;">💰</div>
+  </div>
+</header>
+
+<main>
+
+<h2>Was möchtest du heute machen?</h2>
+
+<div class="grid">
+
+  <div class="card games">
+    <div class="icon">🎮</div>
+    <h3>Spielen & verdienen</h3>
+    <p>Spiele entdecken und für erreichte Ziele belohnt werden.</p>
+  </div>
+
+  <div class="card free">
+    <div class="icon">🎁</div>
+    <h3>Gratis testen</h3>
+    <p>Produkte testen, Geld-zurück-Aktionen und Gratisangebote.</p>
+  </div>
+
+  <div class="card cashback">
+    <div class="icon">💸</div>
+    <h3>Cashback</h3>
+    <p>Online einkaufen und einen Teil deines Geldes zurückbekommen.</p>
+  </div>
+
+  <div class="card deals">
+    <div class="icon">🏷️</div>
+    <h3>Coupons & Deals</h3>
+    <p>Rabatte, Gutscheine und besondere Angebote entdecken.</p>
+  </div>
+
+</div>
+
+<div class="today">
+
+  <div class="today-title">
+    <h2>🔥 Heute lohnt sich</h2>
+    <span class="hot">TOP</span>
+  </div>
+
+  <div class="offer">
+    <div class="offer-icon">🎮</div>
+    <div>
+      <strong>Neue Spiele entdecken</strong>
+      <small>Demnächst verfügbar</small>
+    </div>
+  </div>
+
+  <div class="offer">
+    <div class="offer-icon">🎁</div>
+    <div>
+      <strong>Gratis testen</strong>
+      <small>Neue Aktionen erscheinen hier</small>
+    </div>
+  </div>
+
+  <div class="offer">
+    <div class="offer-icon">💸</div>
+    <div>
+      <strong>Cashback sichern</strong>
+      <small>Partnerangebote folgen</small>
+    </div>
+  </div>
+
+</div>
+
+</main>
+
+<div class="bottom">
+
+  <div class="nav active">
+    <div>🏠</div>
+    Start
+  </div>
+
+  <div class="nav">
+    <div>🔥</div>
+    Entdecken
+  </div>
+
+  <div class="nav">
+    <div>💰</div>
+    Guthaben
+  </div>
+
+  <div class="nav">
+    <div>👤</div>
+    Konto
+  </div>
+
+</div>
+
+</body>
+</html>
